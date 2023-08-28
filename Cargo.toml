@@ -15,7 +15,7 @@ prune = []
 override_any = []
 
 [dependencies]
-naga = { version = "0.13", features = ["wgsl-in", "wgsl-out", "glsl-in", "glsl-out", "clone", "span"] }
+naga = { git = "https://github.com/gfx-rs/naga", rev="df8107b78812cc2b1e3d5de35279cedc1f0da3fb", features = ["wgsl-in", "wgsl-out", "glsl-in", "glsl-out", "clone", "span"] }
 tracing = "0.1"
 regex = "1.5"
 regex-syntax = "0.6"
