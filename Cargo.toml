@@ -17,11 +17,11 @@ prune = []
 allow_deprecated = []
 
 [dependencies]
-naga = { version = "0.14.1", features = ["wgsl-in", "wgsl-out", "clone", "span"] }
+naga = { git = "https://github.com/gfx-rs/wgpu.git", branch = "trunk", features = ["wgsl-in", "wgsl-out", "clone"] }
 tracing = "0.1"
 regex = "1.8"
 regex-syntax = "0.7"
-thiserror = "1.0"
+thiserror = "1.0.51"
 codespan-reporting = "0.11"
 data-encoding = "2.3.2"
 bit-set = "0.5"
@@ -31,6 +31,6 @@ once_cell = "1.17.0"
 indexmap = "2"
 
 [dev-dependencies]
-wgpu = { version = "0.18", features = ["naga"] }
+wgpu = { git = "https://github.com/gfx-rs/wgpu.git", branch = "trunk", features = ["naga"] }
 futures-lite = "1"
 tracing-subscriber = { version = "0.3", features = ["std", "fmt"] }

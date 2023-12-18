@@ -1427,7 +1427,7 @@ mod test {
             .unwrap();
         let (device, queue) = futures_lite::future::block_on(adapter.request_device(
             &wgpu::DeviceDescriptor {
-                features: Features::MAPPABLE_PRIMARY_BUFFERS,
+                required_features: Features::MAPPABLE_PRIMARY_BUFFERS,
                 ..Default::default()
             },
             None,
